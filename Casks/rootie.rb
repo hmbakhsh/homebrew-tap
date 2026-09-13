@@ -13,11 +13,16 @@ cask "rootie" do
   binary "#{appdir}/Rootie.app/Contents/MacOS/Rootie",
          target: "rootie"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Rootie.app"]
+  end
+
   uninstall quit: "io.github.hmbakhsh.rootie"
 
   caveats <<~EOS
-    Rootie is not yet notarized. If macOS blocks the first launch,
-    open System Settings → Privacy & Security and choose “Open Anyway”.
+    Rootie is currently ad-hoc signed. This custom cask removes its quarantine
+    attribute during installation until a notarized release is available.
 
     Then configure it with:
 
