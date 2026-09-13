@@ -9,7 +9,7 @@ jobs:
     runs-on: macos-15
     steps:
       - uses: actions/checkout@v5
-      - run: ruby -c Casks/browser-router.rb
+      - run: ruby -c Casks/rootie.rb
       - run: brew tap hmbakhsh/tap "$GITHUB_WORKSPACE"
-      - run: brew trust --cask hmbakhsh/tap/browser-router
-      - run: brew audit --cask --strict hmbakhsh/tap/browser-router
+      - run: brew trust --cask hmbakhsh/tap/rootie
+      - run: brew audit --cask --strict hmbakhsh/tap/rootie
