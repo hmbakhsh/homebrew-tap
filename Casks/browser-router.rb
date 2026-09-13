@@ -7,7 +7,7 @@ cask "browser-router" do
   desc "Route external links to Chromium browser profiles"
   homepage "https://rootie.hbak.co"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "Browser Router.app"
   binary "#{appdir}/Browser Router.app/Contents/MacOS/BrowserRouter",
