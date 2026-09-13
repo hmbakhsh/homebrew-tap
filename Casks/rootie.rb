@@ -1,6 +1,6 @@
 cask "rootie" do
-  version "0.3.0"
-  sha256 "7c4b1a4f9f69d76fb6d554994e57f353a1e815a35e1cdce86ff10cff3bbb0a7b"
+  version "0.3.1"
+  sha256 "d770f0dead6e5ffbc48b32e0fddb481b57e5ab16fbbab8a0093d190dc550df53"
 
   url "https://github.com/hmbakhsh/rootie/releases/download/v#{version}/Rootie.zip"
   name "Rootie"
