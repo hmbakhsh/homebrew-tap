@@ -5,7 +5,7 @@ cask "rootie" do
   url "https://github.com/hmbakhsh/rootie/releases/download/v#{version}/Rootie.zip"
   name "Rootie"
   desc "Route external links to Chromium browser profiles"
-  homepage "https://rootie.hbak.co"
+  homepage "https://rootie.hbak.co/"
 
   depends_on macos: :ventura
 
@@ -13,9 +13,9 @@ cask "rootie" do
   binary "#{appdir}/Rootie.app/Contents/MacOS/Rootie",
          target: "rootie"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Rootie.app"]
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-dr", "com.apple.quarantine", "{{appdir}}/Rootie.app"]
   end
 
   uninstall quit: "io.github.hmbakhsh.rootie"
