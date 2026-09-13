@@ -1,0 +1,13 @@
+name: Test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v5
+      - run: ruby -c Casks/browser-router.rb
+      - run: brew audit --cask --strict Casks/browser-router.rb
