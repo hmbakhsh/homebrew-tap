@@ -7,6 +7,7 @@ cask "rootie" do
   desc "Route external links to Chromium browser profiles"
   homepage "https://rootie.hbak.co/"
 
+  auto_updates true
   depends_on macos: :ventura
 
   app "Rootie.app"
