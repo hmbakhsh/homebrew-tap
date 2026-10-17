@@ -1,6 +1,6 @@
 cask "claude-account-switcher" do
-  version "1.1"
-  sha256 "6a596055725bc937a577bf8092fbab7a5bdf3bf7d0a6f0516ac15aaf4a43ccc6"
+  version "1.2"
+  sha256 "f68ab90f45b71128f484fb5bfc499c8454124c6d0578c07dc95d5dcb61d8a8d2"
 
   url "https://github.com/hmbakhsh/claude-account-switcher/releases/download/v#{version}/Claude-Account-Switcher.zip"
   name "Claude Account Switcher"
