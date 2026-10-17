@@ -11,5 +11,5 @@ jobs:
       - uses: actions/checkout@v5
       - run: ruby -c Casks/*.rb
       - run: brew tap hmbakhsh/tap "$GITHUB_WORKSPACE"
-      - run: brew trust --cask hmbakhsh/tap/rootie hmbakhsh/tap/claude-account-switcher
-      - run: brew audit --cask --strict hmbakhsh/tap/rootie hmbakhsh/tap/claude-account-switcher
+      - run: brew trust --cask hmbakhsh/tap/rootie hmbakhsh/tap/claudeswap
+      - run: brew audit --cask --strict hmbakhsh/tap/rootie hmbakhsh/tap/claudeswap
