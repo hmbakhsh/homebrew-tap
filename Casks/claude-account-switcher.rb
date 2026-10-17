@@ -16,10 +16,11 @@ cask "claude-account-switcher" do
         args: ["-dr", "com.apple.quarantine", "{{appdir}}/Claude Account Switcher.app"]
   end
 
-  uninstall quit:      "dev.claude-swap.switcher",
-            launchctl: ["dev.claude-swap.auto", "com.cswap.menubar"]
+  uninstall quit: "dev.claude-swap.switcher"
 
-  zap trash: "~/Library/Logs/claude-account-switcher.log"
+  # Background services keep running across upgrades; only a full zap stops them.
+  zap launchctl: ["dev.claude-swap.auto", "com.cswap.menubar"],
+      trash:     "~/Library/Logs/claude-account-switcher.log"
 
   caveats <<~EOS
     Claude Account Switcher is ad-hoc signed. This cask removes its quarantine
