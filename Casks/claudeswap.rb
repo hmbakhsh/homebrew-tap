@@ -1,6 +1,6 @@
 cask "claudeswap" do
-  version "1.5"
-  sha256 "b77140380fefb9613486c69a75ba48baa9a7f6a1304ebd1ad6d969aea80dcd29"
+  version "1.6"
+  sha256 "90c5f904155b062d1b4638090efc50f82d0766c4fa33563f8b66c9c2bb7451bf"
 
   url "https://github.com/hmbakhsh/claudeswap/releases/download/v#{version}/ClaudeSwap.zip"
   name "ClaudeSwap"
