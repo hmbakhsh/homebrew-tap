@@ -9,7 +9,7 @@ jobs:
     runs-on: macos-15
     steps:
       - uses: actions/checkout@v5
-      - run: ruby -c Casks/rootie.rb
+      - run: ruby -c Casks/*.rb
       - run: brew tap hmbakhsh/tap "$GITHUB_WORKSPACE"
-      - run: brew trust --cask hmbakhsh/tap/rootie
-      - run: brew audit --cask --strict hmbakhsh/tap/rootie
+      - run: brew trust --cask hmbakhsh/tap/rootie hmbakhsh/tap/claude-account-switcher
+      - run: brew audit --cask --strict hmbakhsh/tap/rootie hmbakhsh/tap/claude-account-switcher
