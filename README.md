@@ -39,6 +39,7 @@ Messages from scripts and agents in a black island that grows out of the
 MacBook notch, plus the `notch` CLI to send them:
 
 ```sh
+brew trust --cask hmbakhsh/tap/notch-island
 brew install --cask hmbakhsh/tap/notch-island
 open -a Island
 ```
