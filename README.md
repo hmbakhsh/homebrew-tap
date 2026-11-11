@@ -32,3 +32,15 @@ brew install --cask hmbakhsh/tap/claudeswap
 ```
 
 See the [source repository](https://github.com/hmbakhsh/claudeswap).
+
+## Island
+
+Messages from scripts and agents in a black island that grows out of the
+MacBook notch, plus the `notch` CLI to send them:
+
+```sh
+brew install --cask hmbakhsh/tap/notch-island
+open -a Island
+```
+
+See the [source repository](https://github.com/hmbakhsh/notch-island).
