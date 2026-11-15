@@ -1,16 +1,19 @@
-cask "notch-island" do
-  version "0.2.1"
-  sha256 "feba1d2ca4a5612c2135b6e11d729c7e4728a360a9e88fd208a515762ebd6827"
+cask "island" do
+  version "0.2.2"
+  sha256 "d9d841f4e55ba14468bfeb4e156b416edc8e7f61ff3a58336ba8609b16a028f5"
 
-  url "https://github.com/hmbakhsh/notch-island/releases/download/v#{version}/Island.zip"
+  url "https://github.com/hmbakhsh/island/releases/download/v#{version}/Island.zip"
   name "Island"
   desc "Messages from scripts and agents in a pop-out island at the notch"
-  homepage "https://github.com/hmbakhsh/notch-island"
+  homepage "https://github.com/hmbakhsh/island"
 
   auto_updates true
   depends_on macos: :sonoma
 
   app "Island.app"
+  binary "#{appdir}/Island.app/Contents/MacOS/Island",
+         target: "island"
+  # The CLI's name before the rename; scripts and agents still call it.
   binary "#{appdir}/Island.app/Contents/MacOS/Island",
          target: "notch"
 

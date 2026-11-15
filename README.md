@@ -36,12 +36,12 @@ See the [source repository](https://github.com/hmbakhsh/claudeswap).
 ## Island
 
 Messages from scripts and agents in a black island that grows out of the
-MacBook notch, plus the `notch` CLI to send them:
+MacBook notch, plus the `island` CLI to send them (`notch`, its old name, also works):
 
 ```sh
-brew trust --cask hmbakhsh/tap/notch-island
-brew install --cask hmbakhsh/tap/notch-island
+brew trust --cask hmbakhsh/tap/island
+brew install --cask hmbakhsh/tap/island
 open -a Island
 ```
 
-See the [source repository](https://github.com/hmbakhsh/notch-island).
+See the [source repository](https://github.com/hmbakhsh/island).
