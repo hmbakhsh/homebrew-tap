@@ -1,6 +1,6 @@
 cask "island" do
-  version "0.2.3"
-  sha256 "9f56a471f4349aeb121bd61ad35aadac31eaaa5312392bf6c8091d7dec77fb18"
+  version "0.3.0"
+  sha256 "313d06ae948b2a1d653adefa4c081fb585866fb6058448bcd10f0f83d9ba5b39"
 
   url "https://github.com/hmbakhsh/island/releases/download/v#{version}/Island.zip"
   name "Island"
